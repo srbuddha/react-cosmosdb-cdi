@@ -4,6 +4,7 @@ const router = express.Router();
 const heroesService = require('../hero-service');
 
 router.get('/heroes', (req, res) => {
+  res.json('Welcome To CDI-API')
   heroesService.get(req, res);
 });
 
